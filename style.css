@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .calendar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 70%;
+        margin: auto;
+
+        .date {
+            width: 98%;
+            padding: 4px;
+
+            #month-year {
+                width: 100%;
+                background-color: rgba(214, 254, 208, 1);
+                text-align: center;
+                font-size: 34px;
+                font-weight: 800;
+            }
+            #day {
+                text-align: center;
+                font-size: 64px;
+                font-weight: 900;
+                margin: 0.5rem;
+            }
+            #day-of-week {
+                text-align: center;
+                font-size: 44px;
+                font-weight: 900;
+                text-decoration: underline;
+            }
+        }
+
+        .schedule {
+            width: 98%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            margin-top: 1rem;
+
+            #table {
+                width: 100%;
+                min-height: 42vh;
+                margin: auto;
+                text-align: center;
+
+                th {
+                    border: 1px solid black;
+                    padding: 10px;
+                    background-color: rgb(243, 243, 215);
+                    height: 40px;
+                }
+
+                td {
+                    border: 1px solid black;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .current-day {
+                background-color: rgba(165, 204, 79, 1);
+            }
+        }
+
+        .btn-group {
+            width: 98%;
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            background-color: rgba(204, 204, 158, 1);
+            padding: 4px;
+
+            button {
+                display: inline-block;
+                padding: 6px 12px;
+                margin: 0 8px;
+                font-size: 12px;
+                font-weight: 900;
+                background-color: rgb(187, 240, 195);
+                border: none;
+                cursor: pointer;
+            }
+
+            .choose-day {
+                select {
+                    padding: 6px 12px;
+                    margin: 0 8px;
+                    font-size: 12px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

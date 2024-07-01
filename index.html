@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="calendar">
+                <div class="date">
+                    <p id="month-year"></p>
+                    <p id="day"></p>
+                    <p id="day-of-week"></p>
+                </div>
+                <div class="schedule">
+                    <table id="table"></table>
+                </div>
+                <div class="btn-group">
+                    <button id="prev-year" onclick="prevYear()">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                    <button id="prev-month" onclick="prevMonth()">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="choose-day">
+                        <select name="" id="select-day"></select>
+                        <span>/</span>
+                        <select name="" id="select-month"></select>
+                        <span>/</span>
+                        <select name="" id="select-year"></select>
+                        <button id="btn-choose-day" onclick="chooseDay()">OK</button>
+                    </div>
+                    <button id="next" onclick="nextMonth()">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button id="next-year" onclick="nextYear()">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <button id="today" onclick="toDay()">
+                        <i class="fa-solid fa-calendar-week"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://kit.fontawesome.com/82448a6f83.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</html>
